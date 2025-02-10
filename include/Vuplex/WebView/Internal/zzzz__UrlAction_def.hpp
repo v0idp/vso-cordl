@@ -1,0 +1,79 @@
+#pragma once
+// IWYU pragma private; include "Vuplex/WebView/Internal/UrlAction.hpp"
+#include "beatsaber-hook/shared/utils/typedefs.h"
+#include "../../../cordl_internals/cordl_internals.hpp"
+CORDL_MODULE_INIT
+#include "System/zzzz__Object_def.hpp"
+#include "beatsaber-hook/shared/utils/typedefs-string.hpp"
+CORDL_MODULE_EXPORT(UrlAction)
+// Forward declare root types
+namespace Vuplex::WebView::Internal {
+class UrlAction;
+}
+// Write type traits
+MARK_REF_PTR_T(::Vuplex::WebView::Internal::UrlAction);
+// Dependencies System.Object
+namespace Vuplex::WebView::Internal {
+// Is value type: false
+// CS Name: Vuplex.WebView.Internal.UrlAction
+class CORDL_TYPE UrlAction : public ::System::Object {
+public:
+// Declarations
+/// @brief Field Type, offset 0x18, size 0x8 
+ __declspec(property(get=__cordl_internal_get_Type, put=__cordl_internal_set_Type)) ::StringW  Type;
+
+/// @brief Field Url, offset 0x10, size 0x8 
+ __declspec(property(get=__cordl_internal_get_Url, put=__cordl_internal_set_Url)) ::StringW  Url;
+
+static inline ::Vuplex::WebView::Internal::UrlAction* New_ctor() ;
+
+constexpr ::StringW const& __cordl_internal_get_Type() const;
+
+constexpr ::StringW& __cordl_internal_get_Type() ;
+
+constexpr ::StringW const& __cordl_internal_get_Url() const;
+
+constexpr ::StringW& __cordl_internal_get_Url() ;
+
+constexpr void __cordl_internal_set_Type(::StringW  value) ;
+
+constexpr void __cordl_internal_set_Url(::StringW  value) ;
+
+/// @brief Method .ctor, addr 0x17c27e8, size 0x8, virtual false, abstract: false, final false
+inline void _ctor() ;
+
+protected:
+// Ctor Parameters []
+// @brief default ctor
+constexpr UrlAction() ;
+public:
+
+// Ctor Parameters [CppParam { name: "", ty: "UrlAction", modifiers: "&&", def_value: None }]
+// @brief delete move ctor to prevent accidental deref moves
+UrlAction(UrlAction && ) = delete;
+
+// Ctor Parameters [CppParam { name: "", ty: "UrlAction", modifiers: "const&", def_value: None }]
+// @brief delete copy ctor to prevent accidental deref copies
+UrlAction(UrlAction const& ) = delete;
+
+/// @brief IL2CPP Metadata Type Index
+static constexpr uint32_t  __IL2CPP_TYPE_DEFINITION_INDEX{261};
+
+/// @brief Field Url, offset: 0x10, size: 0x8, def value: None
+ ::StringW  ___Url;
+
+/// @brief Field Type, offset: 0x18, size: 0x8, def value: None
+ ::StringW  ___Type;
+
+static constexpr bool __IL2CPP_IS_VALUE_TYPE = false;
+};
+// Non member Declarations
+static_assert(offsetof(::Vuplex::WebView::Internal::UrlAction, ___Url) == 0x10, "Offset mismatch!");
+
+static_assert(offsetof(::Vuplex::WebView::Internal::UrlAction, ___Type) == 0x18, "Offset mismatch!");
+
+static_assert(::cordl_internals::size_check_v<::Vuplex::WebView::Internal::UrlAction, 0x20>, "Size mismatch!");
+
+} // namespace end def Vuplex::WebView::Internal
+NEED_NO_BOX(::Vuplex::WebView::Internal::UrlAction);
+DEFINE_IL2CPP_ARG_TYPE(::Vuplex::WebView::Internal::UrlAction*, "Vuplex.WebView.Internal", "UrlAction");

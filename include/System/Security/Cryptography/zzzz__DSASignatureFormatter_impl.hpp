@@ -1,0 +1,48 @@
+#pragma once
+// IWYU pragma private; include "System/Security/Cryptography/DSASignatureFormatter.hpp"
+#include "System/Security/Cryptography/zzzz__AsymmetricSignatureFormatter_impl.hpp"
+#include "System/Security/Cryptography/zzzz__DSASignatureFormatter_def.hpp"
+//  Writing Method size for method: ::System::Security::Cryptography::DSASignatureFormatter._ctor
+template<>
+
+struct CORDL_HIDDEN ::il2cpp_utils::il2cpp_type_check::MetadataGetter<static_cast<void (::System::Security::Cryptography::DSASignatureFormatter::*)()>(&::System::Security::Cryptography::DSASignatureFormatter::_ctor)> {
+  constexpr static std::size_t size = 0x80;
+  constexpr static std::size_t addrs = 0x2613138;
+
+  inline static const ::MethodInfo* methodInfo() {
+    static auto* ___internal_method = THROW_UNLESS((::il2cpp_utils::FindMethod(
+                        ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<::System::Security::Cryptography::DSASignatureFormatter*>::get(),
+                        ".ctor",
+                        std::span<const Il2CppClass* const, 0>(),
+                        ::std::span<const Il2CppType* const, 0>()
+                    )));
+    return ___internal_method;
+  }
+};
+constexpr ::StringW& System::Security::Cryptography::DSASignatureFormatter::__cordl_internal_get__oid()  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____oid;
+}
+constexpr ::StringW const& System::Security::Cryptography::DSASignatureFormatter::__cordl_internal_get__oid() const {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+return this->____oid;
+}
+constexpr void System::Security::Cryptography::DSASignatureFormatter::__cordl_internal_set__oid(::StringW  value)  {
+CORDL_FIELD_NULL_CHECK(static_cast<void const*>(this));
+il2cpp_functions::gc_wbarrier_set_field(this, static_cast<void**>(static_cast<void*>(&this->____oid)), cordl_internals::convert(std::forward<decltype(value)>(value)));
+}
+inline void System::Security::Cryptography::DSASignatureFormatter::_ctor()  {
+static auto* ___internal_method = THROW_UNLESS((::il2cpp_utils::FindMethod(
+                        ::il2cpp_utils::il2cpp_type_check::il2cpp_no_arg_class<::System::Security::Cryptography::DSASignatureFormatter*>::get(),
+                        ".ctor",
+                        std::span<const Il2CppClass* const, 0>(),
+                        ::std::span<const Il2CppType* const, 0>()
+                    )));
+return ::cordl_internals::RunMethodRethrow<void, false>(this, ___internal_method);
+}
+inline ::System::Security::Cryptography::DSASignatureFormatter* System::Security::Cryptography::DSASignatureFormatter::New_ctor()  {
+return THROW_UNLESS(::il2cpp_utils::NewSpecific<::System::Security::Cryptography::DSASignatureFormatter*>());
+}
+// Ctor Parameters []
+constexpr ::System::Security::Cryptography::DSASignatureFormatter::DSASignatureFormatter()   {
+}
